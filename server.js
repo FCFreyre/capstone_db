@@ -8,7 +8,7 @@ var MongoClient = require('mongodb').MongoClient,
 const app = express();
 app.use(bodyParser.json())
 app.use(cors())
-const dbUrl = process.env.MONGODB_URI ||'mongodb://localhost/capstone';
+const dbUrl = process.env.MONGODB_URI ||'mongodb://Coach123:coach@ds157682.mlab.com:57682/heroku_2hznvmql';
 
 function validate(data) {
   let errors = {};
