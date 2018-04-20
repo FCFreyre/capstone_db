@@ -8,6 +8,11 @@ var MongoClient = require('mongodb').MongoClient,
 const app = express();
 app.use(bodyParser.json())
 app.use(cors())
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 const dbUrl = process.env.MONGODB_URI ||'mongodb://Coach123:coach@ds157682.mlab.com:57682/heroku_2hznvmql';
 
 function validate(data) {
