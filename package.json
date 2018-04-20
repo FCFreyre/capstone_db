@@ -16,7 +16,8 @@
     "body-parser": "^1.18.2",
     "cors": "^2.8.3",
     "express": "^4.15.3",
-    "mongodb": "^2.2.30"
+    "mongodb": "^2.2.30",
+    "npm": "^5.8.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
